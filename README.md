@@ -34,6 +34,7 @@ Every space inside `{ }` and `( )` means that this is pushed into next line :)
 |  `imd→` | `import { destructuredModule } from 'module'`       |
 |  `ime→` | `import * as alias from 'module'`                   |
 |  `ima→` | `import { originalName as aliasName} from 'module'` |
+| `imsc→` | `import styled from 'styled-components'`            |
 |  `exp→` | `export default moduleName`                         |
 |  `exd→` | `export { destructuredModule } from 'module'`       |
 |  `exa→` | `export { originalName as aliasName} from 'module'` |
