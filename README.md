@@ -99,13 +99,6 @@ Every space inside `{ }` and `( )` means that this is pushed into next line :)
 
 - All hooks from [official docs](https://reactjs.org/docs/hooks-reference.html) are added with hook name prefix.
 
-## React Native
-
-|     Prefix | Method                                 |
-| ---------: | -------------------------------------- |
-|    `imrn→` | `import { $1 } from 'react-native'`    |
-| `rnstyle→` | `const styles = StyleSheet.create({})` |
-
 ## Redux
 
 |          Prefix | Method                       |

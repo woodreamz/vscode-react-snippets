@@ -525,14 +525,6 @@
     "prefix": "rxuseStore",
     "body": ["const store = useStore();"]
   },
-  "reactNativeImport": {
-    "prefix": "imrn",
-    "body": "import { ${1:moduleName} } from 'react-native'"
-  },
-  "reactNativeStyles": {
-    "prefix": "rnstyle",
-    "body": ["const styles = StyleSheet.create({", "\t${1:style}", "})", ""]
-  },
   "propTypeArray": {
     "prefix": "pta",
     "body": "PropTypes.shape([]),",
