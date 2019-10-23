@@ -2,7 +2,7 @@
   "name": "es7-react-js-snippets",
   "displayName": "ES7 React/Redux/GraphQL/React-Native snippets",
   "description": "Simple extensions for React, Redux and Graphql in JS/TS with ES7 syntax",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "publisher": "woodreamz",
   "icon": "images/logo.png",
   "keywords": [
@@ -10,11 +10,10 @@
     "react",
     "redux",
     "react-native",
-    "javascript",
-    "typescript"
+    "javascript"
   ],
   "engines": {
-    "vscode": "^1.13.0"
+    "vscode": "^1.22.0"
   },
   "license": "MIT",
   "repository": {
@@ -52,14 +51,6 @@
       {
         "language": "javascriptreact",
         "path": "./snippets/snippets.json"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/ts-snippets.json"
-      },
-      {
-        "language": "typescriptreact",
-        "path": "./snippets/ts-snippets.json"
       }
     ]
   },

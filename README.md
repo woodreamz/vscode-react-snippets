@@ -1,24 +1,21 @@
-# VS Code ES7 React/Redux/React-Native/JS snippets
+# VS Code ES7 React/Redux/JS snippets
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/dsznajder.es7-react-js-snippets.svg)](https://vsmarketplacebadge.apphb.com/version-short/dsznajder.es7-react-js-snippets.svg)
-[![Install](https://vsmarketplacebadge.apphb.com/installs/dsznajder.es7-react-js-snippets.svg)](https://vsmarketplacebadge.apphb.com/installs-short/dsznajder.es7-react-js-snippets.svg)
-[![Downloads](https://vsmarketplacebadge.apphb.com/downloads/dsznajder.es7-react-js-snippets.svg)](https://vsmarketplacebadge.apphb.com/downloads-short/dsznajder.es7-react-js-snippets.svg)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/dsznajder.es7-react-js-snippets.svg)](https://vsmarketplacebadge.apphb.com/rating-short/dsznajder.es7-react-js-snippets.svg)
+This extension provides you JavaScript and React/Redux snippets in ES7 with Babel plugin features for [VS Code](https://code.visualstudio.com/).
 
-This extension provides you JavaScript and React/Redux snippets in ES7 with Babel plugin features for [VS Code](https://code.visualstudio.com/)
+To install the extension: [es7-react-js-snippets on marketplace](https://marketplace.visualstudio.com/items?itemName=woodreamz.es7-react-js-snippets).
 
 ## Search command
 
 You can search through snippets with `ES7 snippet search` command which can be run with `CMD + Shift + P` or just use `CMD + Shift + R` keybinding.
 
-Here is direct link to GitHub [vscode-react-snippets](https://github.com/woodreamz/vscode-react-snippets)
+Here is direct link to GitHub [vscode-react-snippets](https://github.com/woodreamz/vscode-react-snippets).
+
+This is a fork of [vscode-react-snippets original](https://github.com/dsznajder/vscode-es7-javascript-react-snippets).
 
 ## Supported languages (file extensions)
 
 - JavaScript (.js)
 - JavaScript React (.jsx)
-- TypeScript (.ts)
-- TypeScript React (.tsx)
 
 ## Snippets info
 
@@ -54,6 +51,12 @@ Every space inside `{ }` and `( )` means that this is pushed into next line :)
 | `cmmb→` | `comment block`                                     |
 |   `cp→` | `const { } = this.props`                            |
 |   `cs→` | `const { } = this.state`                            |
+
+## ESLint
+
+| Prefix | Method                 |
+| -----: | ---------------------- |
+| `eld→` | `/* eslint-disable */` |
 
 ## React
 
@@ -105,12 +108,15 @@ Every space inside `{ }` and `( )` means that this is pushed into next line :)
 
 ## Redux
 
-|       Prefix | Method                    |
-| -----------: | ------------------------- |
-|  `rxaction→` | `redux action template`   |
-|   `rxconst→` | `export const $1 = '$1'`  |
-| `rxreducer→` | `redux reducer template`  |
-|  `rxselect→` | `redux selector template` |
+|          Prefix | Method                       |
+| --------------: | ---------------------------- |
+|     `rxaction→` | `redux action template`      |
+|      `rxconst→` | `export const $1 = '$1'`     |
+|    `rxreducer→` | `redux reducer template`     |
+|     `rxselect→` | `redux selector template`    |
+| `rxuseSelector` | `redux useSelector template` |
+| `rxuseDispatch` | `redux useDispatch template` |
+|    `rxuseStore` | `redux useStore template`    |
 
 ## PropTypes
 
@@ -147,16 +153,6 @@ Every space inside `{ }` and `( )` means that this is pushed into next line :)
 |  `ptany→` | `PropTypes.any`                          |
 | `ptypes→` | `static propTypes = {}`                  |
 
-## GraphQL
-
-|`graphql→`|`import { compose, graphql } from 'react-apollo'`|
-
-### `expgql`
-
-```js
-export default compose(graphql($1, { name: $2 }))($3);
-```
-
 ## Console
 
 | Prefix | Method                              |
@@ -181,347 +177,152 @@ export default compose(graphql($1, { name: $2 }))($3);
 ### `rcc`
 
 ```javascript
-import React, { Component } from 'react';
-
-export default class FileName extends Component {
-  render() {
-    return <div>$2</div>;
-  }
-}
-```
-
-### `rce`
-
-```javascript
-import React, { Component } from 'react';
-
-export class FileName extends Component {
-  render() {
-    return <div>$2</div>;
-  }
-}
-
-export default $1;
-```
-
-### `rcep`
-
-```javascript
-import React, { Component } from 'react';
+import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-export class FileName extends Component {
-  static propTypes = {};
+// #region styled-components
+
+// #endregion
+
+// #region functions
+
+// #endregion
+
+// #region constants
+
+// #endregion
+
+// #region component
+const propTypes = {};
+
+const defaultProps = {};
+
+/**
+ * 
+ */
+class FileName extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+    };
+  }
 
   render() {
     return <div>$2</div>;
   }
 }
 
-export default $1;
+FileName.propTypes = propTypes;
+FileName.defaultProps = defaultProps;
+// #endregion
+
+export default FileName;
 ```
 
 ### `rpc`
 
 ```javascript
-import React, { PureComponent } from 'react';
-
-export default class FileName extends PureComponent {
-  render() {
-    return <div>$2</div>;
-  }
-}
-```
-
-### `rpcp`
-
-```javascript
-import React, { PureComponent } from 'react';
+import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-export default class FileName extends PureComponent {
-  static propTypes = {};
+// #region styled-components
+
+// #endregion
+
+// #region functions
+
+// #endregion
+
+// #region constants
+
+// #endregion
+
+// #region component
+const propTypes = {};
+
+const defaultProps = {};
+
+/**
+ * 
+ */
+class FileName extends React.PureComponent {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+    };
+  }
 
   render() {
     return <div>$2</div>;
   }
 }
-```
 
-### `rpce`
-
-```javascript
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
-
-export class FileName extends PureComponent {
-  static propTypes = {};
-
-  render() {
-    return <div>$2</div>;
-  }
-}
+FileName.propTypes = propTypes;
+FileName.defaultProps = defaultProps;
+// #endregion
 
 export default FileName;
-```
-
-### `rccp`
-
-```javascript
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-
-export default class FileName extends Component {
-  static propTypes = {
-    $2: $3
-  };
-
-  render() {
-    return <div>$4</div>;
-  }
-}
-```
-
-### `rfcp`
-
-```javascript
-import React from 'react';
-import PropTypes from 'prop-types';
-
-function $1(props) {
-  return <div>$0</div>;
-}
-
-$1.propTypes = {};
-
-export default $1;
 ```
 
 ### `rfc`
 
 ```javascript
 import React from 'react';
-
-export default function $1() {
-  return <div>$0</div>;
-}
-```
-
-### `rfce`
-
-```javascript
-import React from 'react';
-
-function $1() {
-  return <div>$0</div>;
-}
-
-export default $1;
-```
-
-### `rafcp`
-
-```javascript
-import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const $1 = props => {
+// #region styled-components
+
+// #endregion
+
+// #region functions
+
+// #endregion
+
+// #region constants
+
+// #endregion
+
+// #region component
+const propTypes = {};
+
+const defaultProps = {};
+
+/**
+ * 
+ */
+const FileName = () => {
   return <div>$0</div>;
-};
-
-$1.propTypes = {};
-
-export default $1;
-```
-
-### `rafc`
-
-```javascript
-import React from 'react';
-
-const $1 = () => {
-  return <div>$0</div>;
-};
-
-export default $1;
-```
-
-### `rafce`
-
-```javascript
-import React from 'react';
-
-const $1 = () => {
-  return <div>$0</div>;
-};
-
-export default $1;
-```
-
-### `rmc`
-
-```javascript
-import React, { memo } from 'react';
-
-export default memo(function $1() {
-  return <div>$0</div>;
-});
-```
-
-### `rmcp`
-
-```javascript
-import React, { memo } from 'react';
-import PropTypes from 'prop-types';
-
-const $1 = memo(function $1(props) {
-  return <div>$0</div>;
-});
-
-$1.propTypes = {};
-
-export default $1;
-```
-
-### `rcredux`
-
-```javascript
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-
-export class FileName extends Component {
-  static propTypes = {
-    $2: $3
-  };
-
-  render() {
-    return <div>$4</div>;
-  }
 }
 
-const mapStateToProps = state => ({});
+FileName.propTypes = propTypes;
+FileName.defaultProps = defaultProps;
+// #endregion
 
-const mapDispatchToProps = {};
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(FileName);
+export default FileName;
 ```
 
 ### `reduxmap`
 
 ```javascript
-const mapStateToProps = state => ({});
+// #region redux HOC
+const mapStateToProps = (state) => ({
+  {$1}: {$2:selector}(state),
+});
 
-const mapDispatchToProps = {};
-```
-
-## React Native Components
-
-### `rnc`
-
-```javascript
-import React, { Component } from 'react';
-import { Text, View } from 'react-native';
-
-export default class FileName extends Component {
-  render() {
-    return (
-      <View>
-        <Text> $2 </Text>
-      </View>
-    );
-  }
-}
-```
-
-### `rnf`
-
-```javascript
-import React from 'react';
-import { View, Text } from 'react-native';
-
-const $1 = () => {
-  return (
-    <View>
-      <Text> $2 </Text>
-    </View>
-  );
+const actionCreators = {
+  {$3}Action: {$3},
 };
+// //#endregion
 
-export default $1;
-```
-
-### `rncs`
-
-```javascript
-import React, { Component } from 'react';
-import { Text, StyleSheet, View } from 'react-native';
-
-export default class FileName extends Component {
-  render() {
-    return (
-      <View>
-        <Text> $2 </Text>
-      </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({});
-```
-
-### `rnce`
-
-```javascript
-import React, { Component } from 'react';
-import { Text, View } from 'react-native';
-
-export class FileName extends Component {
-  render() {
-    return (
-      <View>
-        <Text> $2 </Text>
-      </View>
-    );
-  }
-}
-
-export default $1;
-```
-
-### `rncredux`
-
-```javascript
-import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-
-export class FileName extends Component {
-  static propTypes = {
-    $2: $3
-  };
-
-  render() {
-    return (
-      <View>
-        <Text> $2 </Text>
-      </View>
-    );
-  }
-}
-
-const mapStateToProps = state => ({});
-
-const mapDispatchToProps = {};
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(FileName);
+connect(
+      mapStateToProps,
+      actionCreators
+    )(Component);
 ```
 
 ## Others
@@ -602,53 +403,6 @@ describe('<${1:ComponentName} />', () => {
 })
 ```
 
-### `sntest`
-
-```javascript
-import 'react-native'
-import React from 'react'
-import renderer from 'react-test-renderer'
-
-import ${1:ComponentName} from '../${1:ComponentName}'
-
-describe('<${1:ComponentName} />', () => {
-  const defaultProps = {
-
-  }
-
-  const wrapper = renderer.create(<${1:ComponentName} {...defaultProps} />)
-
-  test('render', () => {
-    expect(wrapper).toMatchSnapshot()
-  })
-})
-```
-
-### `snrtest`
-
-```javascript
-import 'react-native'
-import React from 'react'
-import renderer from 'react-test-renderer'
-import { Provider } from 'react-redux'
-
-import store from 'src/store/configureStore'
-import ${1:ComponentName} from '../${1:ComponentName}'
-
-describe('<${1:ComponentName} />', () => {
-  const defaultProps = {}
-  const wrapper = renderer.create(
-    <Provider store={store}>
-      <${1:ComponentName} {...defaultProps} />
-    </Provider>,
-  )
-
-  test('render', () => {
-    expect(wrapper).toMatchSnapshot()
-  })
-})
-```
-
 ### `hocredux`
 
 ```javascript
@@ -682,11 +436,13 @@ export default WrapperComponent => connect(mapStateToProps, mapDispatchToProps)(
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default WrappedComponent => {
+const withSomething = (WrappedComponent) => {
   const hocComponent = ({ ...props }) => <WrappedComponent {...props} />;
-
+  hocComponent.wrappedComponent = WrappedComponent;
   hocComponent.propTypes = {};
 
   return hocComponent;
 };
+
+export default withSomething;
 ```
