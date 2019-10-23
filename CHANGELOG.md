@@ -4,6 +4,16 @@ All info about changes
 
 # Released
 
+[2.3.3] - 2019-10-23
+- Change README and description.
+
+[2.3.2] - 2019-10-23
+
+- Remove react-native, typescript
+- Add eslint-disable.
+- Add redux hooks.
+- Update class and functional components
+
 [2.3.1] - 2019-07-03
 
 - Forked and cutomized

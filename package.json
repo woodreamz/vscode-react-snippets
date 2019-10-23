@@ -1,15 +1,14 @@
 {
   "name": "es7-react-js-snippets",
-  "displayName": "ES7 React/Redux/GraphQL/React-Native snippets",
-  "description": "Simple extensions for React, Redux and Graphql in JS/TS with ES7 syntax",
-  "version": "2.3.2",
+  "displayName": "ES7 React/Redux snippets",
+  "description": "Simple extensions for React, Redux and in JS with ES7 syntax",
+  "version": "2.3.3",
   "publisher": "woodreamz",
   "icon": "images/logo.png",
   "keywords": [
     "snippets",
     "react",
     "redux",
-    "react-native",
     "javascript"
   ],
   "engines": {
