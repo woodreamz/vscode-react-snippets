@@ -667,7 +667,11 @@
   },
   "staticPropTpyes": {
     "prefix": "ptypes",
-    "body": ["static propTypes = {", "$0", "}", ""]
+    "body": ["const propTypes = {", "$0", "};"]
+  },
+  "defaultPropTpyes": {
+    "prefix": "dtypes",
+    "body": ["const defaultProps = {", "$0", "};"]
   },
   "propTypeAny": {
     "prefix": "ptany",

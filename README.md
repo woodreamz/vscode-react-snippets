@@ -144,7 +144,8 @@ Every space inside `{ }` and `( )` means that this is pushed into next line :)
 |   `ptsh→` | `PropTypes.shape({ })`                   |
 |  `ptshr→` | `PropTypes.shape({ }).isRequired`        |
 |  `ptany→` | `PropTypes.any`                          |
-| `ptypes→` | `static propTypes = {}`                  |
+| `ptypes→` | `const propTypes = {};`                  |
+| `dtypes→` | `const defaultProps = {};`               |
 
 ## Console
 

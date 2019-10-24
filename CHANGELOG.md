@@ -4,6 +4,11 @@ All info about changes
 
 # Released
 
+[2.3.4] = 2019-10-24
+
+- Update ptypes.
+- Add dtypes (`const defaultProps = {};`)
+
 [2.3.3] - 2019-10-23
 
 - Change README and description.
