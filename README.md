@@ -4,13 +4,13 @@ This extension provides you JavaScript and React/Redux snippets in ES7 with Babe
 
 To install the extension: [es7-react-js-snippets on marketplace](https://marketplace.visualstudio.com/items?itemName=woodreamz.es7-react-js-snippets).
 
+GitHub link: [vscode-react-snippets](https://github.com/woodreamz/vscode-react-snippets).
+
+This is a fork of [vscode-react-snippets original](https://github.com/dsznajder/vscode-es7-javascript-react-snippets).
+
 ## Search command
 
 You can search through snippets with `ES7 snippet search` command which can be run with `CMD + Shift + P` or just use `CMD + Shift + R` keybinding.
-
-Here is direct link to GitHub [vscode-react-snippets](https://github.com/woodreamz/vscode-react-snippets).
-
-This is a fork of [vscode-react-snippets original](https://github.com/dsznajder/vscode-es7-javascript-react-snippets).
 
 ## Supported languages (file extensions)
 
