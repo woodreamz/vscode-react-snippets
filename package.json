@@ -1,8 +1,8 @@
 {
   "name": "es7-react-js-snippets",
   "displayName": "ES7 React/Redux snippets",
-  "description": "Simple extensions for React, Redux and in JS with ES7 syntax",
-  "version": "2.3.4",
+  "description": "Simple extensions for React, Redux in JS with ES7 syntax",
+  "version": "2.3.5",
   "publisher": "woodreamz",
   "icon": "images/logo.png",
   "keywords": [

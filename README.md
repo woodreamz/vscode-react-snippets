@@ -99,17 +99,30 @@ Every space inside `{ }` and `( )` means that this is pushed into next line :)
 
 - All hooks from [official docs](https://reactjs.org/docs/hooks-reference.html) are added with hook name prefix.
 
+|                 Prefix | Method                                                              |
+| ---------------------: | ------------------------------------------------------------------- |
+|            `useState→` | `const [state, setState] = useState(initialState);`                 |
+|           `useEffect→` | ``                                                                  |
+|          `useContext→` | `const context = useContext(contextValue)`                          |
+|          `useReducer→` | `const [state, dispatch] = useReducer(reducer, initialState, init)` |
+|         `useCallback→` | ``                                                                  |
+|             `useMemo→` | ``                                                                  |
+|              `useRef→` | ``                                                                  |
+| `useImperativeHandle→` | ``                                                                  |
+|       `useDebugValue→` | `useDebugValue(value)`                                              |
+|     `useLayoutEffect→` | ``                                                                  |
+
 ## Redux
 
-|          Prefix | Method                       |
-| --------------: | ---------------------------- |
-|     `rxaction→` | `redux action template`      |
-|      `rxconst→` | `export const $1 = '$1'`     |
-|    `rxreducer→` | `redux reducer template`     |
-|     `rxselect→` | `redux selector template`    |
-| `rxuseSelector` | `redux useSelector template` |
-| `rxuseDispatch` | `redux useDispatch template` |
-|    `rxuseStore` | `redux useStore template`    |
+|           Prefix | Method                       |
+| ---------------: | ---------------------------- |
+|      `rxaction→` | `redux action template`      |
+|       `rxconst→` | `export const $1 = '$1'`     |
+|     `rxreducer→` | `redux reducer template`     |
+|      `rxselect→` | `redux selector template`    |
+| `rxuseSelector→` | `redux useSelector template` |
+| `rxuseDispatch→` | `redux useDispatch template` |
+|    `rxuseStore→` | `redux useStore template`    |
 
 ## PropTypes
 
