@@ -188,15 +188,15 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+// #region constants
+
+// #endregion
+
 // #region styled-components
 
 // #endregion
 
 // #region functions
-
-// #endregion
-
-// #region constants
 
 // #endregion
 
@@ -235,15 +235,15 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+// #region constants
+
+// #endregion
+
 // #region styled-components
 
 // #endregion
 
 // #region functions
-
-// #endregion
-
-// #region constants
 
 // #endregion
 
@@ -282,15 +282,15 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+// #region constants
+
+// #endregion
+
 // #region styled-components
 
 // #endregion
 
 // #region functions
-
-// #endregion
-
-// #region constants
 
 // #endregion
 
@@ -338,10 +338,8 @@ connect(
 
 ```JS
 /**
-|--------------------------------------------------
-| $1
-|--------------------------------------------------
-*/
+ * $1
+ */
 ```
 
 ### `desc`
@@ -371,43 +369,44 @@ it('should $1', () => {
 ### `stest`
 
 ```javascript
-import React from 'react'
-import renderer from 'react-test-renderer'
-
+import React from 'react';
+import { fireEvent } from '@testing-library/react';
+import { render } from '../../../../../tests/testUtils';
 import { ${1:ComponentName} } from '../${1:ComponentName}'
 
 describe('<${1:ComponentName} />', () => {
   const defaultProps = {}
-  const wrapper = renderer.create(<${1:ComponentName} {...defaultProps} />)
 
-  test('render', () => {
-    expect(wrapper).toMatchSnapshot()
-  })
-})
+  it('render', () => {
+    const { container, getByText } = render(<${1:ComponentName} {...defaultProps} />)
+    getByText('');
+  });
+});
 ```
 
-### `srtest`
+### `shtest`
 
 ```javascript
-import React from 'react'
-import renderer from 'react-test-renderer'
-import { Provider } from 'react-redux'
+import { renderHook } from '@testing-library/react-hooks';
+import ${1:HookName} from '../${1:HookName}'
 
-import store from 'src/store'
-import { ${1:ComponentName} } from '../${1:ComponentName}'
+describe('<${1:HookName} />', () => {
+  it('Should ', () => {
+    const { result } = renderHook(() => ${1:HookName}());
+  });
+});
+```
 
-describe('<${1:ComponentName} />', () => {
-  const defaultProps = {}
-  const wrapper = renderer.create(
-    <Provider store={store}>
-      <${1:${TM_FILENAME_BASE}} {...defaultProps} />)
-    </Provider>,
-  )
+### `jmock`
 
-  test('render', () => {
-    expect(wrapper).toMatchSnapshot()
-  })
-})
+```javascript
+jest.mock('${1:moduleName}', () => ({
+  __esModule: true,
+  default: jest
+    .fn(() => '')
+    .mockImplementationOnce(() => ('mockedReturn'))
+    .mockReturnValueOnce('mockedValue'),
+}));
 ```
 
 ### `hocredux`

@@ -737,13 +737,7 @@
   },
   "Comment Big Block": {
     "prefix": "cmmb",
-    "body": [
-      "/**",
-      "|--------------------------------------------------",
-      "| $1",
-      "|--------------------------------------------------",
-      "*/"
-    ]
+    "body": ["/**", "* $1", " */"]
   },
   "describeBlock": {
     "prefix": "desc",
@@ -763,45 +757,47 @@
   "setupReactTest": {
     "prefix": "stest",
     "body": [
-      "import React from 'react'",
-      "import renderer from 'react-test-renderer'",
+      "import React from 'react';",
+      "import { fireEvent } from '@testing-library/react';",
+      "import { render } from '../../../../../tests/testUtils';",
+      "import { ${1:ComponentName} } from '../${1:ComponentName}'",
       "",
-      "import { ${1:${TM_FILENAME_BASE}} } from '../${1:${TM_FILENAME_BASE}}'",
-      "",
-      "describe('<${1:${TM_FILENAME_BASE}} />', () => {",
+      "describe('<${1:ComponentName} />', () => {",
       "\tconst defaultProps = {}",
-      "\tconst wrapper = renderer.create(<${1:${TM_FILENAME_BASE}} {...defaultProps} />)",
       "",
-      "\ttest('render', () => {",
-      "\t\texpect(wrapper).toMatchSnapshot()",
-      "\t})",
-      "})",
+      "\tit('render', () => {",
+      "\t\tconst { container, getByText } = render(<${1:ComponentName} {...defaultProps} />)",
+      "\t\tgetByText('');",
+      "\t});",
+      "});",
       ""
     ]
   },
   "setupReactComponentTestWithRedux": {
-    "prefix": "srtest",
+    "prefix": "shtest",
     "body": [
-      "import React from 'react'",
-      "import renderer from 'react-test-renderer'",
-      "import { Provider } from 'react-redux'",
+      "import { renderHook } from '@testing-library/react-hooks';",
+      "import ${1:HookName} from '../${1:HookName}'",
       "",
-      "import store from 'src/store'",
-      "import { ${1:${TM_FILENAME_BASE}} } from '../${1:${TM_FILENAME_BASE}}'",
-      "",
-      "describe('<${1:${TM_FILENAME_BASE}} />', () => {",
-      "\tconst defaultProps = {}",
-      "\tconst wrapper = renderer.create(",
-      "\t\t<Provider store={store}>",
-      "\t\t <${1:${TM_FILENAME_BASE}} {...defaultProps} />",
-      "\t\t</Provider>,",
-      "\t)",
-      "",
-      "\ttest('render', () => {",
-      "\t\texpect(wrapper).toMatchSnapshot()",
-      "\t})",
-      "})",
+      "describe('<${1:HookName} />', () => {",
+      "\tit('Should ', () => {",
+      "\t\tconst { result } = renderHook(() => ${1:HookName}());",
+      "\t});",
+      "});",
       ""
+    ],
+    "description": "Create test component"
+  },
+  "setupJestMock": {
+    "prefix": "jmock",
+    "body": [
+      "jest.mock('${1:moduleName}', () => ({",
+      "  __esModule: true,",
+      "  default: jest",
+      "    .fn(() => '')",
+      "    .mockImplementationOnce(() => ('mockedReturn'))",
+      "    .mockReturnValueOnce('mockedValue'),",
+      "}));"
     ],
     "description": "Create test component"
   },
