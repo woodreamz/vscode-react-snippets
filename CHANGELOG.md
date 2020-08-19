@@ -4,6 +4,10 @@ All info about changes
 
 # Released
 
+[2.3.8] - 2019-10-24
+
+- Fix snippets config in package.json.
+
 [2.3.7] - 2019-10-24
 
 - Add typescript snippets.

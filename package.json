@@ -2,7 +2,7 @@
   "name": "es7-react-js-snippets",
   "displayName": "ES7 React/Redux snippets",
   "description": "Simple extension for React, Redux in JS with ES7 syntax",
-  "version": "2.3.7",
+  "version": "2.3.8",
   "publisher": "woodreamz",
   "icon": "images/logo.png",
   "keywords": [
@@ -50,6 +50,22 @@
       {
         "language": "javascriptreact",
         "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/ts-snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/ts-snippets.json"
       }
     ]
   },
