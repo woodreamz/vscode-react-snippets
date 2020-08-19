@@ -4,6 +4,10 @@ All info about changes
 
 # Released
 
+[2.3.7] - 2019-10-24
+
+- Add typescript snippets.
+
 [2.3.4] - 2019-10-24
 
 - Update ptypes.
