@@ -4,6 +4,12 @@ All info about changes
 
 # Released
 
+[2.4.0] - 2022-10-28
+
+- Add snippets for regions.
+- Update and document React hooks.
+- Add Styled components snippets.
+
 [2.3.8] - 2019-10-24
 
 - Fix snippets config in package.json.

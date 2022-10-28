@@ -38,16 +38,16 @@ Every space inside `{ }` and `( )` means that this is pushed into next line :)
 |  `enf→` | `export const functionName = (params) => { }`       |
 |  `edf→` | `export default (params) => { }`                    |
 |  `met→` | `methodName = (params) => { }`                      |
-|  `fre→` | `arrayName.forEach(element => { }`                  |
-|  `fof→` | `for(let itemName of objectName { }`                |
-|  `fin→` | `for(let itemName in objectName { }`                |
+|  `fre→` | `arrayName.forEach(element => { })`                 |
+|  `fof→` | `for(let itemName of objectName { })`               |
+|  `fin→` | `for(let itemName in objectName { })`               |
 | `anfn→` | `(params) => { }`                                   |
 |  `nfn→` | `const functionName = (params) => { }`              |
 |  `dob→` | `const {propName} = objectToDescruct`               |
 |  `dar→` | `const [propName] = arrayToDescruct`                |
 |  `sti→` | `setInterval(() => { }, intervalTime`               |
-|  `sto→` | `setTimeout(() => { }, delayTime`                   |
-| `prom→` | `return new Promise((resolve, reject) => { }`       |
+|  `sto→` | `setTimeout(() => { }, delayTime)`                  |
+| `prom→` | `return new Promise((resolve, reject) => { })`      |
 | `cmmb→` | `comment block`                                     |
 |   `cp→` | `const { } = this.props`                            |
 |   `cs→` | `const { } = this.state`                            |
@@ -102,15 +102,17 @@ Every space inside `{ }` and `( )` means that this is pushed into next line :)
 |                 Prefix | Method                                                              |
 | ---------------------: | ------------------------------------------------------------------- |
 |            `useState→` | `const [state, setState] = useState(initialState);`                 |
-|           `useEffect→` | ``                                                                  |
+|           `useEffect→` | `useEffect(() => { }, [input])`                                     |
+|      `useEffectClean→` | `useEffect(() => { return () => {} }, [input])`                     |
 |          `useContext→` | `const context = useContext(contextValue)`                          |
 |          `useReducer→` | `const [state, dispatch] = useReducer(reducer, initialState, init)` |
-|         `useCallback→` | ``                                                                  |
-|             `useMemo→` | ``                                                                  |
-|              `useRef→` | ``                                                                  |
-| `useImperativeHandle→` | ``                                                                  |
+|         `useCallback→` | `useCallback(() => { },[input])`                                    |
+|             `useMemo→` | `useMemo(() => function, input)`                                    |
+|              `useRef→` | `const ref = useRef(initialValue)`                                  |
+| `useImperativeHandle→` | `useImperativeHandle(ref, () => { }, [input])`                      |
 |       `useDebugValue→` | `useDebugValue(value)`                                              |
-|     `useLayoutEffect→` | ``                                                                  |
+|     `useLayoutEffect→` | `useLayoutEffect(() => { return () => {}, [input] })`               |
+|                  `rhc` | Custom hook                                                         |
 
 ## Redux
 
@@ -179,7 +181,57 @@ Every space inside `{ }` and `( )` means that this is pushed into next line :)
 | `cwa→` | `console.warn`                      |
 | `cin→` | `console.info`                      |
 
+## Styled Components
+
+| `Snippet` | `Content`                       |
+| --------- | ------------------------------- |
+| `isc`     | Import Styled Components        |
+| `iscn`    | Import Styled Components/Native |
+| `isg`     | Styled Components Global Style  |
+| `scp`     | Props snippet into component    |
+| `sch`     | Hover pseudo-class              |
+| `scb`     | Before pseudo-class             |
+| `sca`     | After pseudo-class              |
+| `scd`     | Styled Div                      |
+| `scs`     | Styled Span                     |
+| `scb`     | Styled Button                   |
+| `sca`     | Styled Anchor                   |
+| `sch1`    | Styled H1                       |
+| `sch2`    | Styled H2                       |
+| `sch3`    | Styled H3                       |
+| `sch4`    | Styled H4                       |
+| `sch5`    | Styled H5                       |
+| `sch6`    | Styled H6                       |
+| `scp`     | Styled Paragraph                |
+| `scol`    | Styled Ordered List             |
+| `scul`    | Styled Unordered List           |
+| `scli`    | Styled List Item                |
+| `scim`    | Styled Image                    |
+| `scin`    | Styled Input                    |
+
 ## React Components
+
+### `rch`
+
+```javascript
+// #region constants
+
+// #endregion
+
+// #region functions
+
+// #endregion
+
+/**
+ * 
+ */
+class useHook = () => {
+ return { };
+}
+
+export default useHook;
+```
+
 
 ### `rcc`
 
