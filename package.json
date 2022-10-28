@@ -9,7 +9,8 @@
     "snippets",
     "react",
     "redux",
-    "javascript"
+    "javascript",
+    "styled-components"
   ],
   "engines": {
     "vscode": "^1.22.0"
@@ -22,7 +23,9 @@
   "categories": [
     "Snippets"
   ],
-  "extensionKind": "ui",
+  "extensionKind": [
+    "ui"
+  ],
   "main": "./out/index.js",
   "activationEvents": [
     "onCommand:extension.snippetSearch"
@@ -74,12 +77,13 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "yarn run compile && node ./node_modules/vscode/bin/test"
+    "test": "yarn run compile && node ./node_modules/vscode/bin/test",
+    "package": "vsce package"
   },
   "devDependencies": {
-    "typescript": "3.4.2",
-    "vscode": "1.1.33",
+    "@types/node": "11.13.0",
     "tslint": "5.15.0",
-    "@types/node": "11.13.0"
+    "typescript": "3.4.2",
+    "vscode": "1.1.33"
   }
 }
