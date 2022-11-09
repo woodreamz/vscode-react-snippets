@@ -181,6 +181,15 @@ Every space inside `{ }` and `( )` means that this is pushed into next line :)
 | `cwa→` | `console.warn`                      |
 | `cin→` | `console.info`                      |
 
+## Region
+
+| Prefix | Method                         |
+| -----: | ------------------------------ |
+|  `rgc` | `// #region constants`         |
+|  `rgf` | `// #region functions`         |
+| `rgsc` | `// #region styled-components` |
+| `rgrc` | `// #region components`        |
+
 ## Styled Components
 
 | `Snippet` | `Content`                       |
