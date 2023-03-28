@@ -2,7 +2,7 @@
   "name": "es7-react-js-snippets",
   "displayName": "ES7 React/Redux/Styled-components snippets",
   "description": "Simple extension for React, Redux and styled-components in JS with ES7 syntax",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "publisher": "woodreamz",
   "icon": "images/logo.png",
   "keywords": [
@@ -10,6 +10,7 @@
     "react",
     "redux",
     "javascript",
+    "typescript",
     "styled-components"
   ],
   "engines": {
@@ -78,7 +79,8 @@
     "watch": "tsc -watch -p ./",
     "postinstall": "node ./node_modules/vscode/bin/install",
     "test": "yarn run compile && node ./node_modules/vscode/bin/test",
-    "package": "vsce package"
+    "package": "vsce package",
+    "publish": "vsce publish"
   },
   "devDependencies": {
     "@types/node": "11.13.0",

@@ -4,6 +4,10 @@ All info about changes
 
 # Released
 
+[2.5.0] - 2023-03-28
+
+- Update TypeScript snippets (more update are coming).
+
 [2.4.0] - 2022-10-28
 
 - Add snippets for regions.

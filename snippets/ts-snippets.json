@@ -26,74 +26,37 @@
     ],
     "description": "Creates a React component class with ES7 module system and TypeScript interfaces"
   },
-  "typeScriptReactClassExportComponent": {
-    "prefix": "tsrce",
-    "body": [
-      "import React, { Component } from 'react'",
-      "",
-      "interface Props {",
-      "\t",
-      "}",
-      "interface State {",
-      "\t",
-      "}",
-      "",
-      "class ${1:${TM_FILENAME_BASE}} extends Component<Props, State> {",
-      "\tstate = {}",
-      "",
-      "\trender() {",
-      "\t\treturn (",
-      "\t\t\t<div>",
-      "\t\t\t\t$0",
-      "\t\t\t</div>",
-      "\t\t)",
-      "\t}",
-      "}",
-      "",
-      "export default ${1:${TM_FILENAME_BASE}}",
-      ""
-    ],
-    "description": "Creates a React component class with ES7 module system and TypeScript interfaces"
-  },
-  "typeScriptReactFunctionalExportComponent": {
-    "prefix": "tsrfce",
-    "body": [
-      "import React, { ReactElement } from 'react'",
-      "",
-      "interface Props {",
-      "\t",
-      "}",
-      "",
-      "function ${1:${TM_FILENAME_BASE}}({}: Props): ReactElement {",
-      "\treturn (",
-      "\t\t<div>",
-      "\t\t\t$0",
-      "\t\t</div>",
-      "\t)",
-      "}",
-      "",
-      "export default ${1:${TM_FILENAME_BASE}}",
-      ""
-    ],
-    "description": "Creates a React Functional Component with ES7 module system and TypeScript interface"
-  },
   "typeScriptReactFunctionalComponent": {
     "prefix": "tsrfc",
     "body": [
-      "import React, { ReactElement } from 'react'",
+      "import React from 'react';",
+      "import styled from 'styled-components';",
       "",
-      "interface Props {",
-      "\t",
+      "// #region constants",
+      "",
+      "// #endregion",
+      "",
+      "// #region styled-components",
+      "",
+      "// #endregion",
+      "",
+      "// #region functions",
+      "",
+      "// #endregion",
+      "",
+      "// #region component",
+      "interface ${1:${TM_FILENAME_BASE}}Props {",
       "}",
       "",
-      "export default function ${1:${TM_FILENAME_BASE}}({}: Props): ReactElement {",
-      "\treturn (",
-      "\t\t<div>",
-      "\t\t\t$0",
-      "\t\t</div>",
-      "\t)",
+      "/**",
+      " * ",
+      " */",
+      "const ${1:${TM_FILENAME_BASE}} = ({}: ${1:${TM_FILENAME_BASE}}Props): React.ReactNode => {",
+      "\treturn <div>$2</div>;",
       "}",
-      ""
+      "// #endregion",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
     ],
     "description": "Creates a React Functional Component with ES7 module system and TypeScript interface"
   },
@@ -321,5 +284,11 @@
   "Export type": {
     "prefix": "exptp",
     "body": ["export type ${1:${TM_FILENAME_BASE}} = {$0}"]
+  },
+  "useState": {
+    "prefix": ["tuseState", "tus"],
+    "body": [
+      "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState<>(${2:initialState})"
+    ]
   }
 }
