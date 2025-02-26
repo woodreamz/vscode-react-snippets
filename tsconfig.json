@@ -7,8 +7,6 @@
     "sourceMap": true,
     "strict": true,
     "target": "es6",
-
-    /* Additional Checks */
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedParameters": true
